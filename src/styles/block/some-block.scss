@@ -1,0 +1,98 @@
+body {
+	background-color: $ui-bg-primary;
+	color: $ui-text-primary;
+	background-image: url("../images/stars-tile.jpg");
+	background-position: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+	background-color: #f2f2f2;
+}
+
+h1, h2 {
+	font-family: Soloist3D;
+	text-align: center;
+	font-size: 3em;
+	color: $ui-text-accent;
+	padding: 2em 1em 0;
+}
+h2 {
+	font-size: 2em;
+	padding: 1em;
+}
+
+.container {
+	display: grid;
+	grid-auto-flow: dense;
+	grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+    gap: 1em;
+    width: 100%;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.card {
+	position: relative;
+	width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid grey;
+	background-color: #fff1;
+}
+
+p {
+	font-size: 20px;
+	line-height: 24px;
+	margin-bottom: 5px;
+}
+
+.name {
+	font-family: Soloist3D;
+	color: $ui-text-accent;
+}
+
+.model {
+	font-size: 90%;
+	font-weight: 900;
+}
+
+.index {
+	margin: 0;
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	text-align: center;
+	font-size: 128px;
+	line-height: 90px;
+	opacity: 0.1;
+	color: $ui-text-accent;
+	font-family: Soloist;
+}
+
+ul {
+    margin-top: 10px;
+    margin-left: 25px;
+}
+
+li {
+    margin-bottom: 5px;
+    color: $ui-text-primary;
+    font-size: 14px;
+    line-height: 18px;
+	font-style: italic;
+	
+	&::marker {
+		content: '> ';
+		color: $ui-text-accent;
+		font-family: Soloist;
+		font-style: normal;
+	}
+}

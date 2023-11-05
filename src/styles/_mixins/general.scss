@@ -1,0 +1,13 @@
+@mixin default-font {
+
+}
+
+@mixin heading-font {
+	@include default-font;
+
+}
+
+@mixin selection {
+	color: $ui-bg-primary;
+	background-color: $ui-text-accent;
+}
